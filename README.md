@@ -11,3 +11,7 @@ Refine o modelo apresentado acrescentando os seguintes pontos:
 >> Pagamento – Pode ter cadastrado mais de uma forma de pagamento;
 
 >> Entrega – Possui status e código de rastreio;
+
+## Nesse desafio uma atualização do anterior. 
+Neste diretorio teremos os scripts de __Criação de tabelas__, __Cargas__ e __Perguntas Respondidas via Select__.
+Além dos Scripts terá a versão dois do modelo conceitual EER com pequenos ajustes. 
