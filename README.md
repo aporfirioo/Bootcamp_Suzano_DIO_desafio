@@ -1,17 +1,18 @@
-# Desafio de Projeto: Modelagem de E-commerce
+# 💻 Desafios de Projetos
+## Detalhes do bootcamp
+>> O  bootcamp com foco 100% em database!
 
-## Descrição do Desafio
-O esquema deverá ser adicionado a um repositório do Github para futura avaliação do desafio de projeto. Adicione ao Readme a descrição do projeto conceitual para fornecer o contexto sobre seu esquema.
+>> Será abordado serviço de banco de dados desde as primeiras consultas até a visualização elegante em modelos do Power BI!
 
-## Objetivo:
-Refine o modelo apresentado acrescentando os seguintes pontos:
+>> Criar relatórios que contam histórias e se aprofunde na área mais importante da Suzano e outras grandes empresas.
 
->> Cliente PJ e PF – Uma conta pode ser PJ ou PF, mas não pode ter as duas informações;
+🔧Ferramentas __SQL__, __SGBD__, __GitHub__, __Python__, __PowerBI__ 🔧
 
->> Pagamento – Pode ter cadastrado mais de uma forma de pagamento;
+## Descrição do Desafio 📃
+Nesse diretório concentrarei os desafios do __Bootcamp_Suzano_DIO__
 
->> Entrega – Possui status e código de rastreio;
+## Objetivo: 🎯
+Criar subdiretórios com os desafios do Bootcamp
 
-## Nesse desafio teremos uma atualização do anterior. 
-Neste diretório teremos os scripts de __Criação de tabelas__, __Cargas__ e __Perguntas Respondidas via Select__.
-Além dos Scripts terá a versão dois do modelo conceitual EER com pequenos ajustes. 
+## Instruções 📚
+Em cada pasta estará o desafio específico de forma completa com todos os arquivos utilizados, por nome. 
