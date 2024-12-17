@@ -31,7 +31,7 @@ FROM Produto_Pedido pp
 GROUP BY pp.idPedido
 ORDER BY ValorTotal DESC;
 
--- Quais clientes têm um total de vendas (valorTotal) superior a 5000, e qual é o valor total e a quantidade total de pedidos desses clientes?
+-- Quais clientes têm um total de vendas (valorTotal) menor que 5000, e qual é o valor total e a quantidade total de pedidos desses clientes?
 SELECT c.idCliente, c.Pnome, c.Sobrenome, SUM(p.valorTotal) AS TotalVendas, COUNT(p.idPedido) AS TotalPedidos
 FROM Cliente c
 INNER JOIN Pedido p ON c.idCliente = p.idCliente
@@ -39,3 +39,30 @@ WHERE c.idCliente IS NOT NULL
 GROUP BY c.idCliente, c.Pnome, c.Sobrenome
 HAVING SUM(p.valorTotal) < 5000
 ORDER BY TotalVendas DESC;
+
+
+-- Quantos pedidos foram feitos por cada cliente?
+SELECT c.idCliente, c.Pnome, c.Sobrenome, COUNT(p.idPedido) AS TotalPedidos
+FROM Cliente c
+INNER JOIN Pedido p ON c.idCliente = p.idCliente
+GROUP BY c.idCliente, c.Pnome, c.Sobrenome;
+
+-- Algum vendedor também é fornecedor?
+SELECT tv.nome AS Vendedor, f.nome AS Fornecedor
+FROM Terceiro_Vendedor tv
+INNER JOIN Fornecedor f ON tv.nome = f.nome;
+
+-- Relação de produtos, fornecedores e estoques:
+
+SELECT p.nome AS Produto, f.nome AS Fornecedor, e.localizacao AS Estoque, pe.quantidade
+FROM Produto p
+INNER JOIN Disponibilizando_um_produto dp ON p.idProduto = dp.idProduto
+INNER JOIN Fornecedor f ON dp.idFornecedor = f.idFornecedor
+INNER JOIN Produto_Estoque pe ON p.idProduto = pe.idProduto
+INNER JOIN Estoque e ON pe.idEstoque = e.idEstoque;
+
+-- Relação de nomes dos fornecedores e nomes dos produtos:
+SELECT f.nome AS Fornecedor, p.nome AS Produto
+FROM Fornecedor f
+INNER JOIN Disponibilizando_um_produto dp ON f.idFornecedor = dp.idFornecedor
+INNER JOIN Produto p ON dp.idProduto = p.idProduto;
