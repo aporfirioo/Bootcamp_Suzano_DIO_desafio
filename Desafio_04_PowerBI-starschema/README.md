@@ -51,8 +51,8 @@ O star schema desenvolvido inclui as seguintes tabelas:
 ## Arquivos do Projeto
 Os arquivos necessários para este projeto estão disponíveis no repositório:
 
-1. **Arquivo do MySQL Workbench**: [star_schema_model.mwb](link-para-o-arquivo)
-2. **Imagem do Diagrama ER**: ![Diagrama ER](link-para-imagem)
+1. **Arquivo do MySQL Workbench**: [star_schema_model.mwb](https://github.com/aporfirioo/Bootcamp_Suzano_DIO_desafio/blob/main/Desafio_04_PowerBI-starschema/star_schema_model.mwb)
+2. **Imagem do Diagrama ER**: ![Diagrama ER]([link-para-imagem](https://github.com/aporfirioo/Bootcamp_Suzano_DIO_desafio/blob/main/Desafio_04_PowerBI-starschema/Diagrama%20ER.PNG))
 
 ## Instruções
 1. Clone este repositório: `git clone https://github.com/seu-usuario/projeto-star-schema.git`
@@ -63,6 +63,4 @@ Os arquivos necessários para este projeto estão disponíveis no repositório:
 ## Contribuições
 Sinta-se à vontade para dar um "fork" neste repositório e fazer suas alterações e melhorias. Toda contribuição é bem-vinda!
 
-## Contato
-Para mais informações, entre em contato comigo pelo [LinkedIn](link-para-seu-linkedin) ou [E-mail](mailto:seu-email@dominio.com).
 
